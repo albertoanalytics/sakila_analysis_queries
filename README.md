@@ -35,6 +35,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Business case**: Identifying the top 10 most rented films can be used to understand customer preferences and trends, allowing for better inventory management and targeted marketing efforts.
 
 [Back to Queries](#queries)
+[Back to Table of Contents](#table-of-contents)
 
 #### 1.1.2 Top 5 Popular Categories per Store
 
