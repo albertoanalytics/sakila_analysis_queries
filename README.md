@@ -24,11 +24,11 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 2. [Usage](#usage)
 3. [License](#license)
 
-## Queries {#queries}
+## Queries 
 
-### 1.1 Top Rankings {#top-rankings}
+### 1.1 Top Rankings 
 
-#### 1.1.1 Top 10 Most Rented Films (#top-10-most-rented-films)
+#### 1.1.1 Top 10 Most Rented Films 
 
 - [Query file](./top_10_most_rented_films.sql)
 - **Technical explanation**: Calculates the top 10 most rented films by rental count. This query joins the `rental`, `inventory`, and `film` tables, groups the results by film ID, title, and description, and uses the `COUNT` function to aggregate the rental count.
@@ -37,7 +37,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 [Back to Queries](#queries)
 
-#### 1.1.2 Top 5 Popular Categories per Store (#top-5-popular-categories-per-store)
+#### 1.1.2 Top 5 Popular Categories per Store
 
 - [Query file](./top_5_popular_categories_per_store.sql)
 - **Technical explanation**: Finds the top 5 most popular film categories for each store based on rental count. The query joins the `rental`, `inventory`, `film`, `film_category`, `category`, and `store` tables, groups the results by store ID, category name, and store location, and uses the `COUNT` function to aggregate the rental count for each category.
@@ -46,7 +46,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 [Back to Queries](#queries)
 
-#### 1.1.3 Top 10 Overall Customers (#top-10-overall-customers) 
+#### 1.1.3 Top 10 Overall Customers 
 
 - [Query file](./top_10_overall_customers.sql)
 - **Technical explanation**: Calculates the top 10 overall customers by rental count. The query joins the `rental`, `inventory`, `customer`, and `store` tables, groups the results by customer ID, first name, last name, and store location, and uses the `COUNT` function to aggregate the rental count for each customer.
@@ -55,7 +55,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 [Back to Queries](#queries)
 
-#### 1.1.4 Top 10 Customers per Store (#top-10-customers-per-store)
+#### 1.1.4 Top 10 Customers per Store 
 
 - [Query file](./top_10_customers_per_store.sql)
 - **Technical explanation**: Calculates the top 10 customers for each store by rental count. The query joins the `rental`, `inventory`, `customer`, and `store` tables, groups the results by store ID, customer ID, first name, last name, and store location, and uses the `COUNT` function to aggregate the rental count for each customer.
@@ -66,7 +66,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 ### 1.2 Revenue and Rentals
 
-#### 1.2.1 Total Revenue per Store (#total-revenue-per-store)
+#### 1.2.1 Total Revenue per Store
 
 - [Query file](./total_revenue_per_store.sql)
 - **Technical explanation**: Calculates the total revenue per store. The query joins the `payment`, `rental`, `inventory`, and `store` tables, groups the results by store ID and location, and uses the `SUM` function to aggregate the total revenue for each store.
@@ -75,7 +75,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 [Back to Queries](#queries)
 
-#### 1.2.2 Store Revenue and Average Revenue per Customer (#store-revenue-and-average-revenue-per-customer)
+#### 1.2.2 Store Revenue and Average Revenue per Customer 
 
 - [Query file](./store_revenue_and_average_revenue_per_customer.sql)
 - **Technical explanation**: Calculates the total revenue and average revenue per customer for each store. The query joins the `payment`, `rental`, `inventory`, `customer`, and `store` tables, groups the results by store ID and location, and uses the `SUM` and `AVG` functions to aggregate the total revenue and average revenue per customer for each store.
@@ -84,7 +84,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 [Back to Queries](#queries)
 
-#### 1.2.3 Store Total Rentals and Average Rentals per Customer (#store-total-rentals-and-average-rentals-per-customer)
+#### 1.2.3 Store Total Rentals and Average Rentals per Customer 
 
 - [Query file](./store_total_rentals_and_average_rentals_per_customer.sql)
 - **Technical explanation**: Calculates the total rentals and average rentals per customer for each store. The query joins the `rental`, `inventory`, `customer`, and `store` tables, groups the results by store ID and location, and uses the `COUNT` and `AVG` functions to aggregate the total rentals and average rentals per customer for each store.
@@ -95,7 +95,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 ### 1.3 Customers
 
-#### 1.3.1 Customers Rented from Both Stores (#customers-rented-from-both-stores)
+#### 1.3.1 Customers Rented from Both Stores 
 
 - [Query file](./customers_rented_from_both_stores.sql)
 - **Technical explanation**: Identifies customers who have rented from both stores. The query joins the `rental`, `inventory`, `customer`, and `store` tables, groups the results by customer ID, first name, last name, and store ID, and uses the `HAVING` clause to filter customers who rented from both stores.
@@ -104,7 +104,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 [Back to Queries](#queries)
 
-#### 1.3.2 Top 10 Customers Who Spend the Most per Store (#top-10-customers-who-spend-the-most-per-store)
+#### 1.3.2 Top 10 Customers Who Spend the Most per Store 
 
 - [Query file](./top_10_customers_who_spend_the_most_per_store.sql)
 - **Technical explanation**: Calculates the top 10 customers who spend the most in each store. The query joins the `payment`, `rental`, `inventory`, `customer`, and `store` tables, groups the results by store ID, customer ID, first name, last name, and store location, and uses the `SUM` function to aggregate the total spending for each customer.
@@ -113,7 +113,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 [Back to Queries](#queries)
 
-#### 1.3.3 Top 10 Customers Who Spend the Most Overall (#top-10-customers-who-spend-the-most-overall)
+#### 1.3.3 Top 10 Customers Who Spend the Most Overall 
 
 - [Query file](./top_10_customers_who_spend_the_most_overall.sql)
 - **Technical explanation**: Calculates the top 10 customers who spend the most overall across all stores. The query joins the `payment`, `rental`, `inventory`, `customer`, and `store` tables, groups the results by customer ID, first name, last name, and store location, and uses the `SUM` function to aggregate the total spending for each customer.
@@ -124,7 +124,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 ### 1.4 Films and Actors
 
-#### 1.4.1 Total and Average Rental Duration per Category (#total-and-average-rental-duration-per-category)
+#### 1.4.1 Total and Average Rental Duration per Category 
 
 - [Query file](./total_and_average_rental_duration_per_category.sql)
 - **Technical explanation**: Calculates the total and average rental duration for each film category. The query joins the `rental`, `inventory`, `film`, `film_category`, and `category` tables, groups the results by category name, and uses the `SUM` and `AVG` functions to aggregate the total and average rental duration for each category.
@@ -133,7 +133,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 [Back to Queries](#queries)
 
-#### 1.4.2 Actors in More Than 10 Films (#actors-in-more-than-10-films)
+#### 1.4.2 Actors in More Than 10 Films 
 
 - [Query file](./actors_in_more_than_10_films.sql)
 - **Technical explanation**: Identifies actors who have appeared in more than 10 films. The query joins the `actor`, `film_actor`, and `film` tables, groups the results by actor ID, first name, and last name, and uses the `COUNT` function to aggregate the film count for each actor. The `HAVING` clause filters actors with more than 10 films.
