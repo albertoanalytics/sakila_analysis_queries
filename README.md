@@ -36,8 +36,6 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 [Back to Queries](#queries)
 
-[Back to Top](#table-of-contents)
-
 #### 1.1.2 Top 5 Popular Categories per Store
 
 - [Query file](./top_5_popular_categories_per_store.sql)
