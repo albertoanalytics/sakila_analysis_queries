@@ -24,6 +24,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 2. [Usage](#usage)
 3. [License](#license)
 
+
 ## Queries
 
 # 1. Top 10 Most Rented Films
