@@ -26,9 +26,9 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 ## Queries 
 
-### 1.1 Top Rankings 
+### 1.1 Top Rankings #top-rankings
 
-#### 1.1.1 Top 10 Most Rented Films 
+#### 1.1.1 Top 10 Most Rented Films #top-10-most-rented-films
 
 - [Query file](./top_10_most_rented_films.sql)
 - **Technical explanation**: Calculates the top 10 most rented films by rental count. This query joins the `rental`, `inventory`, and `film` tables, groups the results by film ID, title, and description, and uses the `COUNT` function to aggregate the rental count.
