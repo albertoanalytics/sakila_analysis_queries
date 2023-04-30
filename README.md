@@ -20,9 +20,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
     + [1.4 Films and Actors](#14-films-and-actors)
       - [1.4.1 Total and Average Rental Duration per Category](#141-total-and-average-rental-duration-per-category)
       - [1.4.2 Actors in More Than 10 Films](#142-actors-in-more-than-10-films)
-  * [Usage](#usage)
-  * [License](#license)
-
+ 
 ## Queries 
 
 ### 1.1 Top Rankings 
@@ -141,12 +139,3 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 [Back to Top](#sakila-sample-database-analysis)
 
-## Usage
-
-To use this repository, simply clone it to your local machine and execute the SQL queries using your preferred SQL client or tool against the Sakila Sample Database.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-[Back to Top](#sakila-sample-database-analysis)
