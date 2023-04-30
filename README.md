@@ -22,16 +22,15 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 ## Queries
 
-### 1. Top 10 Most Rented Films(#top-10-most-rented-films)
+# 1. Top 10 Most Rented Films
 
 - [Query file](./top_10_most_rented_films.sql)
 - **Technical explanation**: Calculates the top 10 most rented films by rental count. This query joins the `rental`, `inventory`, and `film` tables, groups the results by film ID, title, and description, and uses the `COUNT` function to aggregate the rental count.
 - **Why is this the best approach?**: The query is efficient because it directly calculates the rental count for each film using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying the top 10 most rented films can be used to understand customer preferences and trends, allowing for better inventory management and targeted marketing efforts.
+ [Top](#sakila-sample-database-analysis)
 
-- [Home](#sakila-sample-database-analysis)
-
-### 2. Total Revenue per Store(#total-revenue-per-store)
+# 2. Total Revenue per Store
 
 - [Query file](./total_revenue_per_store.sql)
 - **Technical explanation**: Calculates the total revenue for each store by joining the `payment`, `rental`, and `inventory` tables, and groups the results by `store_id`. The `SUM` function is used to aggregate the total revenue for each store.
