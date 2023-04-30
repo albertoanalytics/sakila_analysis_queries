@@ -5,18 +5,18 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 ## Table of Contents
 
 1. [Queries](#queries)
-   1. [Top 10 Most Rented Films](#top-10-most-rented-films)
-   2. [Total Revenue per Store](#total-revenue-per-store)
-   3. [Customers Rented from Both Stores](#customers-rented-from-both-stores)
-   4. [Total and Average Rental Duration per Category](#total-and-average-rental-duration-per-category)
-   5. [Actors in More Than 10 Films](#actors-in-more-than-10-films)
-   6. [Store Revenue and Average Revenue per Customer](#store-revenue-and-average-revenue-per-customer)
-   7. [Store Total Rentals and Average Rentals per Customer](#store-total-rentals-and-average-rentals-per-customer)
-   8. [Top 5 Popular Categories per Store](#top-5-popular-categories-per-store)
-   9. [Top 10 Customers per Store](#top-10-customers-per-store)
-   10. [Top 10 Overall Customers](#top-10-overall-customers)
-   11. [Top 10 customers who spend the most per store](#top-10-customers-who-spend-the-most-per-store)
-   12. [Top 10 customers who spend the most overall](#top-10-customers-who-spend-the most-overall)
+   1. [Top 10 Most Rented Films](#1-top-10-most-rented-films)
+   2. [Total Revenue per Store](#2-total-revenue-per-store)
+   3. [Customers Rented from Both Stores](#3-customers-rented-from-both-stores)
+   4. [Total and Average Rental Duration per Category](#4-total-and-average-rental-duration-per-category)
+   5. [Actors in More Than 10 Films](#5-actors-in-more-than-10-films)
+   6. [Store Revenue and Average Revenue per Customer](#6-store-revenue-and-average-revenue-per-customer)
+   7. [Store Total Rentals and Average Rentals per Customer](#7-store-total-rentals-and-average-rentals-per-customer)
+   8. [Top 5 Popular Categories per Store](#8-top-5-popular-categories-per-store)
+   9. [Top 10 Customers per Store](#9-top-10-customers-per-store)
+   10. [Top 10 Overall Customers](#10-top-10-overall-customers)
+   11. [Top 10 customers who spend the most per store](#11-top-10-customers-who-spend-the-most-per-store)
+   12. [Top 10 customers who spend the most overall](#12-top-10-customers-who-spend-the-most-overall)
 2. [Usage](#usage)
 3. [License](#license)
 
@@ -28,7 +28,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Technical explanation**: Calculates the top 10 most rented films by rental count. This query joins the `rental`, `inventory`, and `film` tables, groups the results by film ID, title, and description, and uses the `COUNT` function to aggregate the rental count.
 - **Why is this the best approach?**: The query is efficient because it directly calculates the rental count for each film using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying the top 10 most rented films can be used to understand customer preferences and trends, allowing for better inventory management and targeted marketing efforts.
- [Top](#sakila-sample-database-analysis)
+- [Home](#sakila-sample-database-analysis)
 
 # 2. Total Revenue per Store
 
