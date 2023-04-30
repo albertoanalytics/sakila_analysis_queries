@@ -34,8 +34,6 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Why is this the best approach?**: The query is efficient because it directly calculates the rental count for each film using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying the top 10 most rented films can be used to understand customer preferences and trends, allowing for better inventory management and targeted marketing efforts.
 
-[Back to Queries](#queries)
-
 [Back to Top](#sakila-sample-database-analysis)
 
 #### 1.1.2 Top 5 Popular Categories per Store
@@ -45,7 +43,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Why is this the best approach?**: The query is efficient because it directly calculates the rental count for each category in each store, using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Understanding the top 5 popular categories per store can help management make informed decisions about inventory allocation and marketing efforts specific to each store location.
 
-[Back to Queries](#queries)
+[Back to Top](#sakila-sample-database-analysis)
 
 #### 1.1.3 Top 10 Overall Customers 
 
@@ -54,7 +52,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Why is this the best approach?**: This query is efficient because it directly calculates the rental count for each customer using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying the top 10 overall customers can help the business understand and reward their most loyal customers, encouraging customer retention and fostering positive relationships.
 
-[Back to Queries](#queries)
+[Back to Top](#sakila-sample-database-analysis)
 
 #### 1.1.4 Top 10 Customers per Store 
 
@@ -63,7 +61,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Why is this the best approach?**: This query is efficient because it directly calculates the rental count for each customer in each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying the top 10 customers per store can help store managers understand and reward their most loyal customers, encouraging customer retention and fostering positive relationships.
 
-[Back to Queries](#queries)
+[Back to Top](#sakila-sample-database-analysis)
 
 ### 1.2 Revenue and Rentals
 
@@ -74,7 +72,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Why is this the best approach?**: This query is efficient because it directly calculates the total revenue for each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Understanding the total revenue per store can help management make informed decisions about store performance, budget allocation, and resource management.
 
-[Back to Queries](#queries)
+[Back to Top](#sakila-sample-database-analysis)
 
 #### 1.2.2 Store Revenue and Average Revenue per Customer 
 
@@ -83,7 +81,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Why is this the best approach?**: This query is efficient because it directly calculates the total revenue and average revenue per customer for each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Understanding the total revenue and average revenue per customer for each store can help management assess the effectiveness of marketing strategies, customer retention efforts, and revenue generation tactics.
 
-[Back to Queries](#queries)
+[Back to Top](#sakila-sample-database-analysis)
 
 #### 1.2.3 Store Total Rentals and Average Rentals per Customer 
 
@@ -92,7 +90,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Why is this the best approach?**: This query is efficient because it directly calculates the total rentals and average rentals per customer for each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Understanding the total rentals and average rentals per customer for each store can help management evaluate customer engagement and rental trends, allowing for better inventory management and targeted marketing efforts.
 
-[Back to Queries](#queries)
+[Back to Top](#sakila-sample-database-analysis)
 
 ### 1.3 Customers
 
@@ -103,7 +101,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Why is this the best approach?**: This query is efficient because it directly identifies customers who rented from both stores using a simple join and filtering strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying customers who rented from both stores can help management understand customer behavior patterns, allowing for better customer segmentation and targeted marketing efforts.
 
-[Back to Queries](#queries)
+[Back to Top](#sakila-sample-database-analysis)
 
 #### 1.3.2 Top 10 Customers Who Spend the Most per Store 
 
@@ -112,7 +110,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Why is this the best approach?**: This query is efficient because it directly calculates the total spending for each customer in each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying the top 10 customers who spend the most per store can help store managers understand and reward their high-value customers, encouraging customer retention and fostering positive relationships.
 
-[Back to Queries](#queries)
+[Back to Top](#sakila-sample-database-analysis)
 
 #### 1.3.3 Top 10 Customers Who Spend the Most Overall 
 
@@ -121,7 +119,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Why is this the best approach?**: This query is efficient because it directly calculates the total spending for each customer across all stores using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying the top 10 customers who spend the most overall can help the business understand and reward their high-value customers, encouraging customer retention and fostering positive relationships.
 
-[Back to Queries](#queries)
+[Back to Top](#sakila-sample-database-analysis)
 
 ### 1.4 Films and Actors
 
@@ -132,7 +130,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Why is this the best approach?**: This query is efficient because it directly calculates the total and average rental duration for each category using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Understanding the total and average rental duration per category can help management assess customer preferences and rental trends, allowing for better inventory management and targeted marketing efforts.
 
-[Back to Queries](#queries)
+[Back to Top](#sakila-sample-database-analysis)
 
 #### 1.4.2 Actors in More Than 10 Films 
 
@@ -141,7 +139,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Why is this the best approach?**: This query is efficient because it directly identifies actors who have appeared in more than 10 films using a simple join and filtering strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying actors who have appeared in more than 10 films can help the business understand which actors are popular among customers, allowing for better film selection and marketing efforts.
 
-[Back to Queries](#queries)
+[Back to Top](#sakila-sample-database-analysis)
 
 ## Usage
 
@@ -150,3 +148,5 @@ To use this repository, simply clone it to your local machine and execute the SQ
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+[Back to Top](#sakila-sample-database-analysis)
