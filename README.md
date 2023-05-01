@@ -29,7 +29,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 - [Query file](./top_10_most_rented_films.sql)
 - **Technical explanation**: Calculates the top 10 most rented films by rental count. This query joins the `rental`, `inventory`, and `film` tables, groups the results by film ID, title, and description, and uses the `COUNT` function to aggregate the rental count.
-- **Why is this the best approach?**: The query is efficient because it directly calculates the rental count for each film using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
+- **Why is this the best approach?**: The query directly calculates the rental count for each film using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying the top 10 most rented films can be used to understand customer preferences and trends, allowing for better inventory management and targeted marketing efforts.
 
 [Back to Top](#sakila-sample-database-analysis)
@@ -38,7 +38,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 - [Query file](./top_5_popular_categories_per_store.sql)
 - **Technical explanation**: Finds the top 5 most popular film categories for each store based on rental count. The query joins the `rental`, `inventory`, `film`, `film_category`, `category`, and `store` tables, groups the results by store ID, category name, and store location, and uses the `COUNT` function to aggregate the rental count for each category.
-- **Why is this the best approach?**: The query is efficient because it directly calculates the rental count for each category in each store, using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
+- **Why is this the best approach?**: The query directly calculates the rental count for each category in each store, using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Understanding the top 5 popular categories per store can help management make informed decisions about inventory allocation and marketing efforts specific to each store location.
 
 [Back to Top](#sakila-sample-database-analysis)
@@ -47,7 +47,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 - [Query file](./top_10_overall_customers.sql)
 - **Technical explanation**: Calculates the top 10 overall customers by rental count. The query joins the `rental`, `inventory`, `customer`, and `store` tables, groups the results by customer ID, first name, last name, and store location, and uses the `COUNT` function to aggregate the rental count for each customer.
-- **Why is this the best approach?**: This query is efficient because it directly calculates the rental count for each customer using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
+- **Why is this the best approach?**: This query directly calculates the rental count for each customer using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying the top 10 overall customers can help the business understand and reward their most loyal customers, encouraging customer retention and fostering positive relationships.
 
 [Back to Top](#sakila-sample-database-analysis)
@@ -56,7 +56,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 - [Query file](./top_10_customers_per_store.sql)
 - **Technical explanation**: Calculates the top 10 customers for each store by rental count. The query joins the `rental`, `inventory`, `customer`, and `store` tables, groups the results by store ID, customer ID, first name, last name, and store location, and uses the `COUNT` function to aggregate the rental count for each customer.
-- **Why is this the best approach?**: This query is efficient because it directly calculates the rental count for each customer in each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
+- **Why is this the best approach?**: This query directly calculates the rental count for each customer in each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying the top 10 customers per store can help store managers understand and reward their most loyal customers, encouraging customer retention and fostering positive relationships.
 
 [Back to Top](#sakila-sample-database-analysis)
@@ -67,7 +67,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 - [Query file](./total_revenue_per_store.sql)
 - **Technical explanation**: Calculates the total revenue per store. The query joins the `payment`, `rental`, `inventory`, and `store` tables, groups the results by store ID and location, and uses the `SUM` function to aggregate the total revenue for each store.
-- **Why is this the best approach?**: This query is efficient because it directly calculates the total revenue for each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
+- **Why is this the best approach?**: This query directly calculates the total revenue for each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Understanding the total revenue per store can help management make informed decisions about store performance, budget allocation, and resource management.
 
 [Back to Top](#sakila-sample-database-analysis)
@@ -76,7 +76,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 - [Query file](./store_revenue_and_average_revenue_per_customer.sql)
 - **Technical explanation**: Calculates the total revenue and average revenue per customer for each store. The query joins the `payment`, `rental`, `inventory`, `customer`, and `store` tables, groups the results by store ID and location, and uses the `SUM` and `AVG` functions to aggregate the total revenue and average revenue per customer for each store.
-- **Why is this the best approach?**: This query is efficient because it directly calculates the total revenue and average revenue per customer for each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
+- **Why is this the best approach?**: This query directly calculates the total revenue and average revenue per customer for each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Understanding the total revenue and average revenue per customer for each store can help management assess the effectiveness of marketing strategies, customer retention efforts, and revenue generation tactics.
 
 [Back to Top](#sakila-sample-database-analysis)
@@ -85,7 +85,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 - [Query file](./store_total_rentals_and_average_rentals_per_customer.sql)
 - **Technical explanation**: Calculates the total rentals and average rentals per customer for each store. The query joins the `rental`, `inventory`, `customer`, and `store` tables, groups the results by store ID and location, and uses the `COUNT` and `AVG` functions to aggregate the total rentals and average rentals per customer for each store.
-- **Why is this the best approach?**: This query is efficient because it directly calculates the total rentals and average rentals per customer for each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
+- **Why is this the best approach?**: This query directly calculates the total rentals and average rentals per customer for each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Understanding the total rentals and average rentals per customer for each store can help management evaluate customer engagement and rental trends, allowing for better inventory management and targeted marketing efforts.
 
 [Back to Top](#sakila-sample-database-analysis)
@@ -96,7 +96,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 - [Query file](./customers_rented_from_both_stores.sql)
 - **Technical explanation**: Identifies customers who have rented from both stores. The query joins the `rental`, `inventory`, `customer`, and `store` tables, groups the results by customer ID, first name, last name, and store ID, and uses the `HAVING` clause to filter customers who rented from both stores.
-- **Why is this the best approach?**: This query is efficient because it directly identifies customers who rented from both stores using a simple join and filtering strategy. This results in optimized execution time and resource utilization.
+- **Why is this the best approach?**: This query directly identifies customers who rented from both stores using a simple join and filtering strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying customers who rented from both stores can help management understand customer behavior patterns, allowing for better customer segmentation and targeted marketing efforts.
 
 [Back to Top](#sakila-sample-database-analysis)
@@ -105,7 +105,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 - [Query file](./top_10_customers_who_spend_the_most_per_store.sql)
 - **Technical explanation**: Calculates the top 10 customers who spend the most in each store. The query joins the `payment`, `rental`, `inventory`, `customer`, and `store` tables, groups the results by store ID, customer ID, first name, last name, and store location, and uses the `SUM` function to aggregate the total spending for each customer.
-- **Why is this the best approach?**: This query is efficient because it directly calculates the total spending for each customer in each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
+- **Why is this the best approach?**: This query directly calculates the total spending for each customer in each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying the top 10 customers who spend the most per store can help store managers understand and reward their high-value customers, encouraging customer retention and fostering positive relationships.
 
 [Back to Top](#sakila-sample-database-analysis)
@@ -114,7 +114,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 - [Query file](./top_10_customers_who_spend_the_most_overall.sql)
 - **Technical explanation**: Calculates the top 10 customers who spend the most overall across all stores. The query joins the `payment`, `rental`, `inventory`, `customer`, and `store` tables, groups the results by customer ID, first name, last name, and store location, and uses the `SUM` function to aggregate the total spending for each customer.
-- **Why is this the best approach?**: This query is efficient because it directly calculates the total spending for each customer across all stores using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
+- **Why is this the best approach?**: This query directly calculates the total spending for each customer across all stores using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying the top 10 customers who spend the most overall can help the business understand and reward their high-value customers, encouraging customer retention and fostering positive relationships.
 
 [Back to Top](#sakila-sample-database-analysis)
@@ -125,7 +125,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 - [Query file](./total_and_average_rental_duration_per_category.sql)
 - **Technical explanation**: Calculates the total and average rental duration for each film category. The query joins the `rental`, `inventory`, `film`, `film_category`, and `category` tables, groups the results by category name, and uses the `SUM` and `AVG` functions to aggregate the total and average rental duration for each category.
-- **Why is this the best approach?**: This query is efficient because it directly calculates the total and average rental duration for each category using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
+- **Why is this the best approach?**: This query directly calculates the total and average rental duration for each category using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Understanding the total and average rental duration per category can help management assess customer preferences and rental trends, allowing for better inventory management and targeted marketing efforts.
 
 [Back to Top](#sakila-sample-database-analysis)
@@ -134,7 +134,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 - [Query file](./actors_in_more_than_10_films.sql)
 - **Technical explanation**: Identifies actors who have appeared in more than 10 films. The query joins the `actor`, `film_actor`, and `film` tables, groups the results by actor ID, first name, and last name, and uses the `COUNT` function to aggregate the film count for each actor. The `HAVING` clause filters actors with more than 10 films.
-- **Why is this the best approach?**: This query is efficient because it directly identifies actors who have appeared in more than 10 films using a simple join and filtering strategy. This results in optimized execution time and resource utilization.
+- **Why is this the best approach?**: This query directly identifies actors who have appeared in more than 10 films using a simple join and filtering strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying actors who have appeared in more than 10 films can help the business understand which actors are popular among customers, allowing for better film selection and marketing efforts.
 
 [Back to Top](#sakila-sample-database-analysis)
