@@ -20,7 +20,9 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
     + [1.4 Films and Actors](#14-films-and-actors)
       - [1.4.1 Total and Average Rental Duration per Category](#141-total-and-average-rental-duration-per-category)
       - [1.4.2 Actors in More Than 10 Films](#142-actors-in-more-than-10-films)
- 
+  * [Authorship](#Authorship)
+  * [References](#References)
+
 ## Queries 
 
 ### 1.1 Top Rankings 
@@ -136,6 +138,16 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 - **Technical explanation**: Identifies actors who have appeared in more than 10 films. The query joins the `actor`, `film_actor`, and `film` tables, groups the results by actor ID, first name, and last name, and uses the `COUNT` function to aggregate the film count for each actor. The `HAVING` clause filters actors with more than 10 films.
 - **Why is this the best approach?**: This query directly identifies actors who have appeared in more than 10 films using a simple join and filtering strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying actors who have appeared in more than 10 films can help the business understand which actors are popular among customers, allowing for better film selection and marketing efforts.
+
+[Back to Top](#sakila-sample-database-analysis)
+
+## Authorship
+
+This analysis and the accompanying files were created by Alberto F. Hernandez. If you have any questions, suggestions, or issues, please feel free to contact me at ah8664383@gmail.com.
+
+[Back to Top](#sakila-sample-database-analysis)
+
+## References
 
 [Back to Top](#sakila-sample-database-analysis)
 
