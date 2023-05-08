@@ -76,7 +76,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 #### 1.2.2 Store Revenue and Average Revenue per Customer 
 
-- [Query file](./store_revenue_and_average_revenue_per_customer.sql)
+- [Query file](./store_revenue_and_avg_revenue_per_customer.sql)
 - **Technical explanation**: Calculates the total revenue and average revenue per customer for each store. The query joins the `payment`, `rental`, `inventory`, `customer`, and `store` tables, groups the results by store ID and location, and uses the `SUM` and `AVG` functions to aggregate the total revenue and average revenue per customer for each store.
 - **Why is this the best approach?**: This query directly calculates the total revenue and average revenue per customer for each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Understanding the total revenue and average revenue per customer for each store can help management assess the effectiveness of marketing strategies, customer retention efforts, and revenue generation tactics.
@@ -85,7 +85,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 #### 1.2.3 Store Total Rentals and Average Rentals per Customer 
 
-- [Query file](./store_total_rentals_and_average_rentals_per_customer.sql)
+- [Query file](./store_total_rentals_and_avg_rentals_per_customer.sql)
 - **Technical explanation**: Calculates the total rentals and average rentals per customer for each store. The query joins the `rental`, `inventory`, `customer`, and `store` tables, groups the results by store ID and location, and uses the `COUNT` and `AVG` functions to aggregate the total rentals and average rentals per customer for each store.
 - **Why is this the best approach?**: This query directly calculates the total rentals and average rentals per customer for each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Understanding the total rentals and average rentals per customer for each store can help management evaluate customer engagement and rental trends, allowing for better inventory management and targeted marketing efforts.
@@ -105,7 +105,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 #### 1.3.2 Top 10 Customers Who Spend the Most per Store 
 
-- [Query file](./top_10_customers_who_spend_the_most_per_store.sql)
+- [Query file](./top_10_customers_most_spent_per_store.sql)
 - **Technical explanation**: Calculates the top 10 customers who spend the most in each store. The query joins the `payment`, `rental`, `inventory`, `customer`, and `store` tables, groups the results by store ID, customer ID, first name, last name, and store location, and uses the `SUM` function to aggregate the total spending for each customer.
 - **Why is this the best approach?**: This query directly calculates the total spending for each customer in each store using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Identifying the top 10 customers who spend the most per store can help store managers understand and reward their high-value customers, encouraging customer retention and fostering positive relationships.
@@ -125,7 +125,7 @@ This repository contains a collection of SQL queries used to analyze the Sakila 
 
 #### 1.4.1 Total and Average Rental Duration per Category 
 
-- [Query file](./total_and_average_rental_duration_per_category.sql)
+- [Query file](./total_and_avg_rental_duration_per_category.sql)
 - **Technical explanation**: Calculates the total and average rental duration for each film category. The query joins the `rental`, `inventory`, `film`, `film_category`, and `category` tables, groups the results by category name, and uses the `SUM` and `AVG` functions to aggregate the total and average rental duration for each category.
 - **Why is this the best approach?**: This query directly calculates the total and average rental duration for each category using a simple join and aggregation strategy. This results in optimized execution time and resource utilization.
 - **Business case**: Understanding the total and average rental duration per category can help management assess customer preferences and rental trends, allowing for better inventory management and targeted marketing efforts.
