@@ -50,40 +50,40 @@ sakila-analysis/
 ├── .gitignore
 └── queries/
     ├── top-rankings/
-    │   ├── top-10-most-rented-films.sql         			# Most popular films by rental count
-    │   ├── top-5-popular-categories-per-store.sql 			# Top categories by store
-    │   ├── top-10-overall-customers.sql         			# Customers with most rentals
-    │   └── top-10-customers-per-store.sql       			# Top customers by store
+    │   ├── top-10-most-rented-films.sql         		# Most popular films by rental count
+    │   ├── top-5-popular-categories-per-store.sql 		# Top categories by store
+    │   ├── top-10-overall-customers.sql         		# Customers with most rentals
+    │   └── top-10-customers-per-store.sql       		# Top customers by store
     │
     ├── revenue/
-    │   ├── total-revenue-per-store.sql          			# Revenue by store
-    │   ├── store-revenue-and-avg-revenue.sql 		                # Revenue metrics
-    │   └── store-total-rentals.sql                 		        # Rental metrics
+    │   ├── total-revenue-per-store.sql          		# Revenue by store
+    │   ├── store-revenue-and-avg-revenue.sql 		        # Revenue metrics
+    │   └── store-total-rentals.sql                 		# Rental metrics
     │
     ├── customers/
-    │   ├── customers-rented-from-both-stores.sql 			# Multi-store customers
-    │   ├── top-10-customers-most-spent-per-store.sql 		        # Top spenders by store
-    │   ├── top-10-customers-who-spend-the-most-overall.sql 	        # Overall top spenders
-    │   ├── customer-lifetime-value.sql          			# Customer LTV analysis
-    │   └── customer-rfm-analysis.sql            			# RFM segmentation
+    │   ├── customers-rented-from-both-stores.sql 		# Multi-store customers
+    │   ├── top-10-customers-most-spent-per-store.sql 		# Top spenders by store
+    │   ├── top-10-customers-who-spend-the-most-overall.sql 	# Overall top spenders
+    │   ├── customer-lifetime-value.sql          		# Customer LTV analysis
+    │   └── customer-rfm-analysis.sql            		# RFM segmentation
     │
     ├── films-actors/
-    │   ├── total-and-avg-rental-duration-per-category.sql 	        # Duration analysis
-    │   ├── actors-in-more-than-10-films.sql     			# Prolific actors
-    │   ├── film-profitability-analysis.sql      			# ROI analysis
-    │   └── film-rating-vs-rental-performance.sql 			# Rating performance
+    │   ├── total-and-avg-rental-duration-per-category.sql 	# Duration analysis
+    │   ├── actors-in-more-than-10-films.sql     		# Prolific actors
+    │   ├── film-profitability-analysis.sql      		# ROI analysis
+    │   └── film-rating-vs-rental-performance.sql 		# Rating performance
     │
     ├── time-based/
-    │   ├── seasonal-rental-patterns.sql         			# Monthly trends
-    │   └── rentals-by-day-of-week.sql           			# Day of week analysis
+    │   ├── seasonal-rental-patterns.sql         		# Monthly trends
+    │   └── rentals-by-day-of-week.sql           		# Day of week analysis
     │
     ├── inventory/
-    │   ├── inventory-turnover.sql               			# Inventory efficiency
-    │   └── inventory-utilization.sql            			# Utilization percentage
+    │   ├── inventory-turnover.sql               		# Inventory efficiency
+    │   └── inventory-utilization.sql            		# Utilization percentage
     │
     └── geographic/
-        ├── customer-distribution-by-geography.sql 			# Customer locations
-        └── revenue-by-geography.sql             			# Revenue by location
+        ├── customer-distribution-by-geography.sql 		# Customer locations
+        └── revenue-by-geography.sql             		# Revenue by location
 ```
 
 This structure groups related queries together, making it easier to find specific analyses and understand the relationships between different query files.
@@ -124,7 +124,7 @@ This structure groups related queries together, making it easier to find specifi
 ### Top Rankings
 
 #### Top 10 Most Rented Films
-[View Query](./queries/top-rankings/top-10-most-rented-films.sql)
+[View Query](queries/top-rankings/top-10-most-rented-films.sql)
 
 **Technical explanation**: Calculates the top 10 most rented films by rental count. This improved query now includes additional film details like description, release year, rental rate, length, rating, and category. It also calculates the rentals per inventory item ratio.
 
@@ -133,21 +133,21 @@ This structure groups related queries together, making it easier to find specifi
 **Business case**: Identifying the top 10 most rented films can be used to understand customer preferences and trends, allowing for better inventory management and targeted marketing efforts.
 
 #### Top 5 Popular Categories per Store
-[View Query](./queries/top-rankings/top-5-popular-categories-per-store.sql)
+[View Query](queries/top-rankings/top-5-popular-categories-per-store.sql)
 
 **Technical explanation**: Finds the top 5 most popular film categories for each store based on rental count. The improved query now includes store location details (address and city).
 
 **Business case**: Understanding the top 5 popular categories per store can help management make informed decisions about inventory allocation and marketing efforts specific to each store location.
 
 #### Top 10 Overall Customers
-[View Query](./queries/top-rankings/top-10-overall-customers.sql)
+[View Query](queries/top-rankings/top-10-overall-customers.sql)
 
 **Technical explanation**: Calculates the top 10 overall customers by rental count. The improved query now includes customer email, address, city, country, first/last rental dates, and customer rental period in days.
 
 **Business case**: Identifying the top 10 overall customers can help the business understand and reward their most loyal customers, encouraging customer retention and fostering positive relationships.
 
 #### Top 10 Customers per Store
-[View Query](./queries/top-rankings/top-10-customers-per-store.sql)
+[View Query](queries/top-rankings/top-10-customers-per-store.sql)
 
 **Technical explanation**: Calculates the top 10 customers for each store by rental count. The improved query now includes customer email and store location details.
 
@@ -156,21 +156,21 @@ This structure groups related queries together, making it easier to find specifi
 ### Revenue and Rentals
 
 #### Total Revenue per Store
-[View Query](./queries/revenue/total-revenue-per-store.sql)
+[View Query](queries/revenue/total-revenue-per-store.sql)
 
 **Technical explanation**: Calculates the total revenue per store. The improved query now traces revenue to the inventory's store rather than the staff's store, providing a more accurate view of which store's inventory is generating revenue. It also includes store location details, unique customers, average payment amount, and payment date range.
 
 **Business case**: Understanding the total revenue per store can help management make informed decisions about store performance, budget allocation, and resource management.
 
 #### Store Revenue and Average Revenue per Customer
-[View Query](./queries/revenue/store-revenue-and-avg-revenue.sql)
+[View Query](queries/revenue/store-revenue-and-avg-revenue.sql)
 
 **Technical explanation**: Calculates the total revenue and average revenue per customer for each store. The improved query now includes store location details.
 
 **Business case**: Understanding the total revenue and average revenue per customer for each store can help management assess the effectiveness of marketing strategies, customer retention efforts, and revenue generation tactics.
 
 #### Store Total Rentals and Average Rentals per Customer
-[View Query](./queries/revenue/store-total-rentals.sql)
+[View Query](queries/revenue/store-total-rentals.sql)
 
 **Technical explanation**: Calculates the total rentals and average rentals per customer for each store. The improved query now includes store location details.
 
@@ -179,7 +179,7 @@ This structure groups related queries together, making it easier to find specifi
 ### Customer Analysis
 
 #### Customers Rented from Both Stores
-[View Query](./queries/customers/customers-rented-from-both-stores.sql)
+[View Query](queries/customers/customers-rented-from-both-stores.sql)
 
 **Technical explanation**: Identifies customers who have rented from both stores. The improved query now includes customer email, address, city, and country.
 
@@ -188,28 +188,28 @@ This structure groups related queries together, making it easier to find specifi
 **Business case**: Identifying customers who rented from both stores can help management understand customer behavior patterns, allowing for better customer segmentation and targeted marketing efforts.
 
 #### Top 10 Customers Who Spend the Most per Store
-[View Query](./queries/customers/top-10-customers-most-spent-per-store.sql)
+[View Query](queries/customers/top-10-customers-most-spent-per-store.sql)
 
 **Technical explanation**: Calculates the top 10 customers who spend the most in each store. The improved query now includes customer email, store location details, and rounds monetary values for better readability.
 
 **Business case**: Identifying the top 10 customers who spend the most per store can help store managers understand and reward their high-value customers, encouraging customer retention and fostering positive relationships.
 
 #### Top 10 Customers Who Spend the Most Overall
-[View Query](./queries/customers/top-10-customers-who-spend-the-most-overall.sql)
+[View Query](queries/customers/top-10-customers-who-spend-the-most-overall.sql)
 
 **Technical explanation**: Calculates the top 10 customers who spend the most overall across all stores. The improved query now includes customer email, address, city, country, payment count, payment date range, and average payment amount.
 
 **Business case**: Identifying the top 10 customers who spend the most overall can help the business understand and reward their high-value customers, encouraging customer retention and fostering positive relationships.
 
 #### Customer Lifetime Value
-[View Query](./queries/customers/customer-lifetime-value.sql)
+[View Query](queries/customers/customer-lifetime-value.sql)
 
 **Technical explanation**: Calculates the lifetime value of customers based on their payment history. This query determines the monthly and annual value of each customer, as well as a projected three-year value.
 
 **Business case**: Understanding customer lifetime value helps businesses prioritize customer relationships, allocate marketing resources efficiently, and develop retention strategies for high-value customers.
 
 #### Customer RFM Analysis
-[View Query](./queries/customers/customer-rfm-analysis.sql)
+[View Query](queries/customers/customer-rfm-analysis.sql)
 
 **Technical explanation**: Segments customers based on Recency, Frequency, and Monetary value (RFM). This query assigns scores for each dimension and categorizes customers into segments like Champions, Loyal Customers, At Risk, etc.
 
@@ -218,7 +218,7 @@ This structure groups related queries together, making it easier to find specifi
 ### Films and Actors
 
 #### Total and Average Rental Duration per Category
-[View Query](./queries/films-actors/total-and-avg-rental-duration-per-category.sql)
+[View Query](queries/films-actors/total-and-avg-rental-duration-per-category.sql)
 
 **Technical explanation**: Calculates the total and average rental duration for each film category. The improved query now includes additional metrics like film count, minimum/maximum rental duration, standard deviation, average rental rate, and average film length.
 
@@ -332,14 +332,14 @@ To maintain consistency across all SQL queries:
 
 ## Change Log
 
-### v2.0.0 (2023-06-XX)
+### v2.0.0 (2025-05-19)
 - Improved all existing queries with better formatting and additional metrics
 - Added 10 new analysis queries: seasonal patterns, inventory turnover, geographic analysis, etc.
 - Restructured repository organization
 - Enhanced documentation with query optimization techniques
 - Added detailed business cases for each analysis
 
-### v1.0.0 (2023-01-XX)
+### v1.0.0 (2023-04-30)
 - Initial release with 13 SQL queries
 - Comprehensive README documentation
 
