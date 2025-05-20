@@ -47,6 +47,7 @@ The repository is organized into a structured directory layout to make it easy t
 sakila-analysis/
 ├── README.md
 ├── LICENSE
+├── .gitignore
 └── queries/
     ├── top-rankings/
     │   ├── top-10-most-rented-films.sql         		# Most popular films by rental count
@@ -344,7 +345,7 @@ To maintain consistency across all SQL queries:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [License.txt](License.txt) file for details.
 
 ## References
 
