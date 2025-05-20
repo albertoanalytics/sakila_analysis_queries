@@ -47,7 +47,6 @@ The repository is organized into a structured directory layout to make it easy t
 sakila-analysis/
 ├── README.md
 ├── LICENSE
-├── .gitignore
 └── queries/
     ├── top-rankings/
     │   ├── top-10-most-rented-films.sql         		# Most popular films by rental count
@@ -225,21 +224,21 @@ This structure groups related queries together, making it easier to find specifi
 **Business case**: Understanding the total and average rental duration per category can help management assess customer preferences and rental trends, allowing for better inventory management and targeted marketing efforts.
 
 #### Actors in More Than 10 Films
-[View Query](./queries/films-actors/actors-in-more-than-10-films.sql)
+[View Query](queries/films-actors/actors-in-more-than-10-films.sql)
 
 **Technical explanation**: Identifies actors who have appeared in more than 10 films. The improved query uses more consistent formatting and uses the column alias in the ORDER BY clause for better readability.
 
 **Business case**: Identifying actors who have appeared in more than 10 films can help the business understand which actors are popular among customers, allowing for better film selection and marketing efforts.
 
 #### Film Profitability Analysis
-[View Query](./queries/films-actors/film-profitability-analysis.sql)
+[View Query](queries/films-actors/film-profitability-analysis.sql)
 
 **Technical explanation**: Analyzes the profitability of films based on rental revenue vs. replacement cost. This query calculates metrics like total revenue, inventory cost, profit, ROI percentage, and rentals needed to break even.
 
 **Business case**: Understanding film profitability helps optimize inventory decisions, pricing strategies, and identifies which film categories and ratings provide the best return on investment.
 
 #### Film Rating vs. Rental Performance
-[View Query](./queries/films-actors/film-rating-vs-rental-performance.sql)
+[View Query](queries/films-actors/film-rating-vs-rental-performance.sql)
 
 **Technical explanation**: Analyzes the relationship between film ratings (G, PG, PG-13, R, NC-17) and rental performance. This query compares metrics like average rentals per film, revenue per film, and percentage of total rentals/revenue across different ratings.
 
@@ -248,14 +247,14 @@ This structure groups related queries together, making it easier to find specifi
 ### Time-Based Analysis
 
 #### Seasonal Rental Patterns
-[View Query](./queries/time-based/seasonal-rental-patterns.sql)
+[View Query](queries/time-based/seasonal-rental-patterns.sql)
 
 **Technical explanation**: Analyzes rental patterns by month and year to identify seasonal trends. This query calculates rental count, revenue, and percentage change from the previous month for each month in the dataset.
 
 **Business case**: Understanding seasonal rental patterns helps with inventory planning, staffing decisions, and marketing campaign timing to maximize revenue during peak periods and stimulate demand during slower periods.
 
 #### Rentals by Day of Week
-[View Query](./queries/time-based/rentals-by-day-of-week.sql)
+[View Query](queries/time-based/rentals-by-day-of-week.sql)
 
 **Technical explanation**: Analyzes rental patterns by day of week to identify busy days. This query calculates metrics like rental count, revenue, and percentage of total rentals/revenue for each day of the week.
 
@@ -264,14 +263,14 @@ This structure groups related queries together, making it easier to find specifi
 ### Inventory Management
 
 #### Inventory Turnover
-[View Query](./queries/inventory/inventory-turnover.sql)
+[View Query](queries/inventory/inventory-turnover.sql)
 
 **Technical explanation**: Analyzes how frequently each film's inventory is rented. This query calculates metrics like monthly turnover rate, rentals per inventory item, and ROI ratio.
 
 **Business case**: Inventory turnover analysis helps identify which films have high demand relative to their inventory levels, guiding decisions about adding more copies of popular films or reducing inventory of slow-moving titles.
 
 #### Inventory Utilization
-[View Query](./queries/inventory/inventory-utilization.sql)
+[View Query](queries/inventory/inventory-utilization.sql)
 
 **Technical explanation**: Analyzes what percentage of time each film's inventory is rented out. This query calculates the total days rented vs. available for each film, providing a utilization percentage.
 
@@ -280,14 +279,14 @@ This structure groups related queries together, making it easier to find specifi
 ### Geographic Analysis
 
 #### Customer Distribution by Geography
-[View Query](./queries/geographic/customer-distribution-by-geography.sql)
+[View Query](queries/geographic/customer-distribution-by-geography.sql)
 
 **Technical explanation**: Analyzes the geographical distribution of customers across countries and cities. This query calculates the number of customers in each location, percentage of country/total customers, and ranks cities within countries and overall.
 
 **Business case**: Understanding the geographic distribution of customers helps with expansion planning, marketing targeting, and identifying underserved areas with growth potential.
 
 #### Revenue by Geography
-[View Query](./queries/geographic/revenue-by-geography.sql)
+[View Query](queries/geographic/revenue-by-geography.sql)
 
 **Technical explanation**: Analyzes the geographical distribution of revenue. This query calculates metrics like total revenue, revenue per customer, payments per customer, and percentage of country/total revenue for each city.
 
@@ -332,14 +331,14 @@ To maintain consistency across all SQL queries:
 
 ## Change Log
 
-### v2.0.0 (2025-05-19)
+### v2.0.0 (2023-06-XX)
 - Improved all existing queries with better formatting and additional metrics
 - Added 10 new analysis queries: seasonal patterns, inventory turnover, geographic analysis, etc.
 - Restructured repository organization
 - Enhanced documentation with query optimization techniques
 - Added detailed business cases for each analysis
 
-### v1.0.0 (2023-04-30)
+### v1.0.0 (2023-01-XX)
 - Initial release with 13 SQL queries
 - Comprehensive README documentation
 
